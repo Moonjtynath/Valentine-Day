@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="login-section">
+        <div class="login-box">
+            <h2>Login to My Heart</h2>
+            <p style="font-size: 0.8rem; margin-bottom: 10px;">HINT: What is your name?</p>
+
+            <input type="password" id="password-input" placeholder="10 letters">
+            <button onclick="checkPassword()">Unlock</button>
+
+            <p id="hint-msg"></p>
+        </div>
+    </section>
+
+    <section id="transition-screen" class="hidden">
+        <h1 class="fade-in">You have entered the correct key to my heart.</h1>
+    </section>
+
+    <section id="gallery-section" class="hidden">
+        <div class="header-hero">
+            <div>
+                <h1>Hey Beautiful,</h1>
+                <p>Scroll down...</p>
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main D.jpeg" alt="Memory 1">
+            <p class="caption">"Do you remember this day? Start of everything."</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main C.jpeg" alt="Memory 2">
+            <p class="caption">"That smile of yours lights up my entire world."</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main B.jpeg" alt="Memory 3">
+            <p class="caption">"Will anyone ever look at you the way like I do?"</p>
+        </div>
+
+        <div class="photo-container">
+            <video autoplay loop muted playsinline>
+                <source src="Images/Video 1.mp4" type="video/mp4">
+            </video>
+            <p class="caption">"Hope this vlog series never ends"</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main E.jpeg" alt="Memory 5">
+            <p class="caption">"We'll always smile like this forever"</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main F.jpeg" alt="Memory 6">
+            <p class="caption">"I swear, if I don’t get you, I’m marrying this girl instead."</p>
+        </div>
+
+        <div class="photo-container">
+            <video autoplay loop muted playsinline>
+                <source src="Images/Video 2.mp4" type="video/mp4">
+            </video>
+            <p class="caption">"If I ever imagine my forever, it looks like this."</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main G.jpeg" alt="Memory 4">
+            <p class="caption">"Lifetime contract: I feed you momos, you stay with me."</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main H.jpeg" alt="Memory 4">
+            <p class="caption">"Us in alternative Universe"</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main I.jpeg" alt="Memory 4">
+            <p class="caption">"This picture proves that even with our different personalities, we fit perfectly
+                together."</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="Images/Main J.jpeg" alt="Memory 4">
+            <p class="caption">"We slay gang"</p>
+        </div>
+
+        <div class="love-btn-container">
+            <button class="big-love-btn" onclick="askLove()">Press if you love me</button>
+        </div>
+    </section>
+
+    <div id="custom-modal" class="hidden">
+        <div class="modal-content">
+            <h3>One Last Question...</h3>
+            <p>Are you sure you want to enter Moon's heart?</p>
+            <br>
+            <button onclick="enterSecret()">YES</button>
+        </div>
+    </div>
+
+    <section id="final-page" class="hidden">
+        <div class="stars"></div>
+        <div class="letter-content fade-in">
+            <h1>Happy Valentine's Day!</h1>
+            <br>
+            <p>
+                To my dearest Boa Hancock,<br><br>
+                I may be the worst boyfriend you have ever had. I made your life hell. I never got a proper chance to
+                care for you and love you the way I really want to. But believe me, Boa, with every day passing, I want
+                to be closer to you, to sit near you, to look at you, to complete that hunger I always have within me.
+                You make my day complete. I have realized it. Whenever you give me the silent treatment and stop talking
+                to me, at the end of the day I feel empty and tense. My heart beats faster, wanting to see you, hug you,
+                and make myself feel complete. You are the momo to chutney, chili flakes to pizza, pastry to periods,
+                and finally, stars to the moon (stars to the moon because you have a lot of personalities). I want to
+                stay with you for my whole life. I have experienced a lot of emotions since our relationship
+                started, which I had never experienced before. You are the most expensive gift God has given me. So at
+                last, be my Valentine for a lifetime. I love you endlessly. ❤️.<br><br>
+                Love,<br>
+                Moon
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
